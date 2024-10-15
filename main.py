@@ -31,7 +31,7 @@ def create_user():
     root.destroy()
     try:
         user_service.create_new_user(username, name=name, degree=degree, password=password)
-        messagebox.showinfo("Éxito", f"Usuario '{username}' creado correctamente.")
+        messagebox.showinfo("Creación satisfactoria", f"Usuario '{username}' creado correctamente.")
     except Exception as e:
         messagebox.showerror("Error", str(e))
 
